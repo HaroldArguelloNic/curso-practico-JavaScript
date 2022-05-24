@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+}
+header {
+    display: inline-block;
+    height: 150px;
+    width: 80vw;
+    padding: 10px ;
+    border: 2px solid rgb(0,0,0,0.16);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(100,100,215, 0.16);
+    background-color: rgb(146, 186, 186);
+}
+header h1 {
+    margin: 20px auto;
+}
+header p {
+    font-size: 18px;
+}
+body section {
+    background-color: rgb(162, 162, 214);
+    width: 80vw;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: inline-block;
+    padding-top: 30px;
+    font-size: 20px;
+}

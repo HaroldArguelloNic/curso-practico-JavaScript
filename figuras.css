@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     text-align: center;
     height: 100vh;
@@ -10,28 +9,159 @@ body {
     margin: 0 auto;
 }
 header {
+    margin-top: 15px;
     display: inline-block;
-    height: 150px;
+    height: 200px;
     width: 80vw;
     padding: 10px ;
     border: 2px solid rgb(0,0,0,0.16);
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(100,100,215, 0.16);
-    background-color: rgb(146, 186, 186);
+    background-color: #000d31;
+    color: white;
 }
 header h1 {
     margin: 20px auto;
 }
 header p {
-    font-size: 18px;
+    font-size: 22px;
 }
-body section {
-    background-color: rgb(162, 162, 214);
+.calcSquare {
+    
+    background-color: #00264b;
     width: 80vw;
-    height: 200px;
+    height: 250px;
     margin: 0 auto;
     border-radius: 8px;
-    display: inline-block;
     padding-top: 30px;
     font-size: 20px;
+    color: white;
+   
+}
+.calcSquare h2, .calcTriangulo h2, .CalcCircle h2, .reset h2 {
+    padding: 5px;
+}
+.calcSquare form {
+
+    width: 70%;
+    margin: 0 auto;
+}
+.calcSquare label {
+    padding: 0 10px;
+    margin: 3px auto;
+}
+.calcSquare input, .CalcCircle input, .calcTriangulo input {
+    width: 100px;
+
+}
+.calcSquare button, .calcTriangulo button, .CalcCircle button {
+    margin: 10px auto;
+    background-color: orange;
+    height: 30px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px black;
+
+}
+.calcTriangulo {
+    display: flex;
+    flex-direction: column;
+    background-color: #013e66;
+    width: 80vw;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+   
+}
+.CalcCircle {
+    display: flex;
+    flex-direction: column;
+    background-color: #015882;
+    width: 80vw;
+    height: 350px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+}
+.reset {
+    display: flex;
+    flex-direction: column;
+    background-color: #2475a0;
+    width: 80vw;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+
+}
+.reset button {
+    background-color: #912b00;
+    font-size: 24px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px black;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        width: 95vw;
+    }
+    header {
+        height: 250px;
+    }
+    .calcSquare {
+    height: 320px;   
+    }
+    .calcSquare form {
+
+        width: 80%;
+        margin: 0 auto;
+    }
+    .calcTriangulo {
+        height: 550px;
+    }
+.calcTriangulo form{
+        width: 80%;
+        margin: 0 auto;
+    }
+.calcTriangulo p {
+    width: 80%;
+    margin: 0 auto;
+}
+.CalcCircle {
+    height: 550px;
+}
+.CalcCircle form{
+    width: 80%;
+    margin: 0 auto;
+}
+.CalcCircle p {
+width: 80%;
+margin: 0 auto;
+}
+.reset {
+    height: 200px;
+}
+}
+@media (max-width: 380px) {
+    header {
+        height: 300px;
+    }
+    .calcSquare {
+    height: 420px;   
+    }
+    .calcTriangulo {
+        height: 700px;
+    }
+    .CalcCircle button {
+        height: 35px;
+    }
+    
 }

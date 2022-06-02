@@ -5,24 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y Descuento / Taller practico JavaScript</title>
+    <link rel="stylesheet" href="./descuento.css">
 </head>
 <body>
     <header>
-        <h1>
-            Porcentajes y descuentos
-        </h1>
-        <p>Este es el segundo taller del curso practico de JavaScrip</p>
+        <figure>
+            <img src="./asset/2894131-ffeb3b.svg" alt="cupon descuento">
+        </figure>
+        <div class="header-tittle">
+            <h1>
+                Porcentajes y descuentos
+            </h1>
+            <p>Este es el segundo taller del curso practico de JavaScrip</p>
+        </div>
+        
     </header>
-    <form>
-        <label for="inputPrice">Escribe el precio de tu producto</label>
-        <input id="inputPrice" type="number">
-        <label for="inputCupon">Escribe el cupon de descuento de tu producto</label>
-        <input id="inputCupon" type="text">
-        <button type="button" onclick="onClickCalcularPrecioConDescuento()">
-            Calcular el precio con descuento
-        </button>
-        <p id="ResultP"></p>    
-    </form>
+    <section class="discount-container">
+        <h2>Calcula el precio neto a pagar</h2>
+        <form>
+            <label for="inputPrecioOriginal">Escribe el precio de tu producto</label>
+            <input id="inputPrecioOriginal" type="number">
+            <label for="inputDescuento">Digita el porcentaje de descuento</label>
+            <input id="inputDescuento" type="number">
+            <button type="button" onclick="precioConDescuento()">
+                Calcula el precio con Descuento
+            </button>
+            <p id="precioConDescuento"></p>
+        </form>
+    </section>
+    <section class="coupon-container">
+        <h2>Aplica tú cupón de descuento</h2>
+        <form>
+            <label for="inputPrice">Escribe el precio de tu producto</label>
+            <input id="inputPrice" type="number">
+            <label for="inputCupon">Escribe el cupon de descuento de tu producto</label>
+            <input id="inputCupon" type="text">
+            <button type="button" onclick="onClickCalcularPrecioConDescuento()">
+                Calcular el precio con descuento
+            </button>
+            <p id="ResultP"></p>    
+        </form>
+        
+    </section>
     
     <script src="./descuento.js"></script>
 </body>

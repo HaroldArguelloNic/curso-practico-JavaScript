@@ -1,0 +1,177 @@
+/*
+1.Posicionamiento
+2.Modelo de Caja
+3.Tipografia
+4.Efectos Visuales
+5.Otros
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background: linear-gradient(120deg, violet, blue 45%);
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #0069c0 19%, #e8c39e);
+}
+header img {
+    width: 60px;
+    height: 100px;
+    margin-top: 50px;
+    align-self: center;
+}
+.header-tittle {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 150px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
+.header-tittle h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: blue;
+}
+.header-tittle p {
+    margin-top: 24px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.discount-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 12px;
+    box-shadow: 5px 10px rgb(0,0,0,0.25);
+    margin: 25px auto;
+    background-color: #137fd9;
+}
+.discount-container h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.discount-container form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+.discount-container form label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+}
+.discount-container form input {
+    width: 100px;
+    height: 30px;
+    font-size: 1.8rem;
+    align-self: center;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.discount-container form button {
+    height: 35px;
+    width: 250px;
+    align-self: center;
+    background-color: aqua;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: blue;
+    border-radius: 12px;
+}
+.discount-container p {
+    font-family: cursive;
+    font-size: 1.8rem;
+    margin: 15px auto;
+}
+.coupon-container {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: 12px;
+    box-shadow: 5px 10px rgb(0,0,0,0.25);
+    margin: 25px auto;
+    background-color: #2196f3;
+}
+.coupon-container h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.coupon-container form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+}
+.coupon-container form label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+}
+.coupon-container form input {
+    width: 150px;
+    height: 30px;
+    font-size: 1.8rem;
+    align-self: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.coupon-container form button {
+    height: 35px;
+    width: 250px;
+    align-self: center;
+    background-color: aqua;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: blue;
+    border-radius: 12px;
+}
+.coupon-container p {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 25px auto;
+}

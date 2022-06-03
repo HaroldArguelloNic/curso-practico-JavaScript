@@ -13,9 +13,9 @@
     2,
     1
 ]*/
-const lista1 = [];
+const lista2 = [];
 
-const lista1Count = {};
+const lista2Count = {};
 
 function agregaDataModa() {
     const dataModa = document.getElementById("inputModa");
@@ -25,23 +25,23 @@ function agregaDataModa() {
         document.getElementById("inputModa").value = "";
         document.getElementById("inputModa").focus();
     } else {
-        lista1.push(valueModa);
-        document.getElementById("txtModa").value = lista1;
+        lista2.push(valueModa);
+        document.getElementById("txtModa").value = lista2;
         document.getElementById("inputModa").value = "";
         document.getElementById("inputModa").focus();
     }
 }
 function cacularModa() {
-    lista1.map(
+    lista2.map(
         function (elemento) {
-            if(lista1Count[elemento]) {
-                lista1Count[elemento] ++;
+            if(lista2Count[elemento]) {
+                lista2Count[elemento] ++;
             } else {
-                lista1Count[elemento]= 1;
+                lista2Count[elemento]= 1;
             }
         }
     );        
-    const lista1Array = Object.entries(lista1Count).sort(
+    const lista1Array = Object.entries(lista2Count).sort(
         function (elementoA,elementoB) {
             return elementoA[1] - elementoB[1];
         }        
@@ -66,9 +66,9 @@ function cacularModa() {
 /* Calcular la media Geometrica con los datos del array */
 function calcularMediaG() {
     let media = 1;
- for(let i=0; i<lista1.length; i++){
-     media = media * lista1[i];
+ for(let i=0; i<lista2.length; i++){
+     media = media * lista2[i];
  }
- media = parseFloat(Math.pow(media,(1/lista1.length))).toFixed(2);
+ media = parseFloat(Math.pow(media,(1/lista2.length))).toFixed(2);
  document.getElementById("rMg").innerText= `La media Geometrica es: ${media}`;
 }

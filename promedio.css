@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    background: linear-gradient(120deg, blue 55%,violet)
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1 {
+    padding-top: 40px;
+    width: 80%;
+    min-width: 280px;
+    margin: 0 auto;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: white;
+    
+}
+section  {
+    width: 90vw;
+    max-width: 350px;
+    height: auto;
+    margin: 5px auto;
+    padding: 25px 0 20px;
+    text-align: center;
+    border: 1px solid violet;
+    border-radius: 12px; 
+}
+section p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+}
+.media-container {
+    background-color: #a87bc7;
+}
+.mediana-container {
+    background-color: #e0b0ff;
+}
+.moda-container {
+    background-color: #f1d7ff;
+}
+.media-container h2, .mediana-container h2, .moda-container h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    line-height: 2.6rem;
+    margin-bottom: 10px;
+}
+.media-container form, .mediana-container form, .moda-container form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.media-container label, .mediana-container label, .moda-container label {
+    font-size: 1.8rem;
+    padding: 5px 0 5px;
+}
+.media-container input {
+    height: 25px;
+    width: 100px;
+    margin:10px auto;
+}
+.media-container #dataView {
+    width: 200px;
+    height: 30px;
+}
+.media-container button {
+    height: 25px;
+    width: 100px;
+    border-radius: 8px;
+    place-self: center;
+}
+@media screen and (min-width: 600px) {
+ body {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+}

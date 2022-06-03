@@ -5,10 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promedio / Tercer taller JavaScript</title>
+    <link rel="stylesheet" href="./promedio.css">
 </head>
 <body>
-    <h1>Tercer taller de JavaScript - Promedios</h1>
+    <header>
+        <h1>Tercer taller de JavaScript - Promedios</h1>
+    </header>
+    <section class="media-container">
+        <h2>Calculo de Media aritmetica</h2>
+        <form>
+            <label for="inputDataMedia">
+                Introduce los datos a calcular
+            </label>
+            <input id="inputDataMedia" type="number">
+            <button type="button" onclick="addDataMedia()">
+                Agregar datos
+            </button>
+            <input type="textarea" id="dataView">
+            <button type="button" onclick="calcularDataMedia()" >
+                Calcular
+            </button>
 
+        </form>
+        <p id="rMediaAritmetica"></p>
+    </section>
+    <section class="mediana-container">
+        <h2>
+            Calculo de la Mediana
+        </h2>
+        <form>
+            <label for="inputData">
+                Introduce los datos
+            </label>
+            <input id="inputData" type="number">
+            <button type="button" onclick="agregaDato()">
+                Agregar Dato
+            </button>
+            <input type="textarea" id="dataViewMediana">
+            <button type="button" onclick="calcularMediana()">
+                Calcular la Mediana de los datos
+            </button>
+            <p id="pMediana"></p>
+    </section>
+    <section class="moda-container">
+        <h2>
+            Calcular la Moda
+        </h2>
+        <form>
+            <label for="inputModa">
+                Introduce los datos
+            </label>
+            <input id="inputModa" type="number">
+            <button type="button" onclick="agregaDataModa()">
+                Agregar Dato
+            </button>
+            <br>
+            <label for="txtModa">
+                Datos agregados
+            </label>
+            <input id="txtModa"type="textarea">
+            <br>
+            <button type="button" onclick="cacularModa()">
+                Calcular Moda
+            </button>
+            <p id="rModa"></p>
+            <h2>Calcular Media Geometrica</h2>
+            <button type="button" onclick="calcularMediaG()">
+                Calcular
+            </button>
+            <p id="rMg"></p>
+        </form>
+
+    </section>
+    
     <script src="./promedio.js"></script>
+    <script src="./mediana.js"></script>
+    <script src="./moda.js"></script>
 </body>
 </html>

@@ -14,3 +14,15 @@ const promedioLista = sumaLista / lista.length;
 
     return promedioLista;
 }
+const DataMedia = [];
+function addDataMedia() {
+    const inputDataMedia = document.getElementById("inputDataMedia");
+    const inputDataMediaValue = Number(inputDataMedia.value);
+    DataMedia.push(inputDataMediaValue);
+    document.getElementById("dataView").value = DataMedia;
+    document.getElementById("inputDataMedia").value="";
+    document.getElementById("inputDataMedia").focus();
+}
+function calcularDataMedia() {
+    document.getElementById("rMediaAritmetica").innerText= `La media aritmetica es igual a: ${calcularMediaAritmetica(DataMedia)}`;
+}

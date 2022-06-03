@@ -5,11 +5,13 @@ function agregaDato() {
     const listaData = document.getElementById("inputData");
     const valueData = Number(listaData.value);
     lista1.push(valueData);
+    document.getElementById("dataViewMediana").value=lista1;
     document.getElementById(inputData.value="");
     document.getElementById("inputData").focus();
+    
 }
 
-function calcularMediaAritmetica(lista) {
+/*function calcularMediaAritmetica(lista) {
     //let sumaLista = 0;
     //for (let i = 0; i < lista.length; i++){
     //    sumaLista += lista[i];
@@ -24,7 +26,7 @@ function calcularMediaAritmetica(lista) {
     
         return promedioLista;
     }
-
+*/
 function esPar(numerito) {
     if (numerito % 2 === 0) {
         return true;

@@ -5,14 +5,18 @@
 }
 html {
     font-size: 62.5%;
-    background: linear-gradient(120deg, blue 55%,violet)
-}
 
+}
+body {
+background-color: blue;
+
+}
 header {
     width: 100vw;
     height: 150px;
     margin: 0 auto;
     text-align: center;
+    background: linear-gradient(10deg, blue 55%,violet);
 }
 header h1 {
     padding-top: 40px;
@@ -48,6 +52,7 @@ section p {
 }
 .moda-container {
     background-color: #f1d7ff;
+    margin-bottom: 15px;
 }
 .media-container h2, .mediana-container h2, .moda-container h2 {
     font-size: 2rem;
@@ -60,6 +65,7 @@ section p {
     display: flex;
     flex-direction: column;
 }
+ 
 .media-container label, .mediana-container label, .moda-container label {
     font-size: 1.8rem;
     padding: 5px 0 5px;
@@ -79,6 +85,40 @@ section p {
     border-radius: 8px;
     place-self: center;
 }
+.mediana-container input {
+    height: 25px;
+    width: 100px;
+    margin:10px auto;
+}
+.mediana-container #dataViewMediana {
+    width: 200px;
+    height: 30px;
+}
+.mediana-container button {
+    height: 30px;
+    width: auto;
+    padding: 0 15px;
+    border-radius: 8px;
+    place-self: center;
+}
+.moda-container input {
+        height: 25px;
+        width: 100px;
+        margin:10px auto;
+}
+.moda-container #txtModa {
+    width: 200px;
+    height: 30px;
+}
+.moda-container button {
+    height: 30px;
+    width: auto;
+    padding: 0 15px;
+    border-radius: 8px;
+    place-self: center;
+}
+       
+
 @media screen and (min-width: 600px) {
  body {
     position: relative;

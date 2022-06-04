@@ -21,7 +21,7 @@
             <button type="button" onclick="addDataMedia()">
                 Agregar datos
             </button>
-            <input type="textarea" id="dataView">
+            <input type="textarea" id="dataView" placeholder="Lista de datos">
             <button type="button" onclick="calcularDataMedia()" >
                 Calcular
             </button>
@@ -41,10 +41,11 @@
             <button type="button" onclick="agregaDato()">
                 Agregar Dato
             </button>
-            <input type="textarea" id="dataViewMediana">
+            <input type="textarea" id="dataViewMediana" placeholder="Lista de datos">
             <button type="button" onclick="calcularMediana()">
                 Calcular la Mediana de los datos
             </button>
+        </form>
             <p id="pMediana"></p>
     </section>
     <section class="moda-container">
@@ -59,12 +60,7 @@
             <button type="button" onclick="agregaDataModa()">
                 Agregar Dato
             </button>
-            <br>
-            <label for="txtModa">
-                Datos agregados
-            </label>
-            <input id="txtModa"type="textarea">
-            <br>
+            <input id="txtModa"type="textarea" placeholder="Lista de datos">
             <button type="button" onclick="cacularModa()">
                 Calcular Moda
             </button>
@@ -75,7 +71,6 @@
             </button>
             <p id="rMg"></p>
         </form>
-
     </section>
     
     <script src="./promedio.js"></script>

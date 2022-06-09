@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Practico de JavaScript | Prestamos</title>
+    <link rel="stylesheet" href="./prestamo.css">
 </head>
 <body>
     <header>
-        <h1>Taller Practico de JavaScript | Calulo de amortizaciones</h1>
+        <h1>Taller Practico de JavaScript | Calculo de amortizaciones</h1>
     </header>
-    <section>
+    <section id="tablaAmort">
         <h2>Calculo de amortizaciones</h2>
         <form>
             <label for="inputCapital">
@@ -25,10 +26,12 @@
                 Digite el plazo en meses
             </label>
             <input id="inputPlazo" type="number">
-            <button type="button">
-                Calcular cuota mensual
+            <button type="button" onclick="calculoTabla()">
+                Calcular Tabla de amortizaciones
             </button>
         </form>
+        
     </section>
+    <script src="./prestamo.js"></script>
 </body>
 </html>

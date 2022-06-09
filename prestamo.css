@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    position: relative;
+    width: 100vw;
+    height: 150px;
+    text-align: center;
+    background-color: #27ae60;
+}
+header h1 {
+    padding: 50px 10px 0px;
+    font-size: 2.rem;
+    font-weight: bold;
+    line-height: 2.4rem;
+    color: #ffffff;
+}
+section {
+    position: relative;
+    margin: 25px auto;
+    min-width: 300px;
+}
+section h2 {
+    margin: 15px auto;
+    text-align: center;
+    font-size: 2.2rem;
+}
+section form {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 180px 100px;
+    grid-auto-rows:minmax(30px, 40px);
+}
+section label {
+    align-self: center;
+}
+section input {
+    height: 20px;
+    width: 50px;
+    place-self: center;
+    
+}

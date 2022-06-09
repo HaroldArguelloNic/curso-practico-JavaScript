@@ -4,10 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Taller practico JavaScript | Analisis de media Salarial</title>
+    <link rel="stylesheet" href="./salarios.css">
 </head>
 <body>
-    <h1>Salarios</h1>
+    <header>
+        <h1>Cuarto Taller de JavaScript | Salarios</h1>
+    </header>
+    <section id="analisis-container">
+        <h2>Analisis de Salarios</h2>
+        <p>Esta herramienta hace uso de la introducción de 10 datos minimos, para calcular la mediana salarial y el top 10% de salarios.</p>
+        <form>
+            <label for="inputNombre">
+                Digite el nombre de la persona
+            </label>
+            <input id="inputNombre" type="text">
+            <label for="inputSalario">
+                Digite el monto salarial
+            </label>
+            <input id="inputSalario"type="number">
+            <button type="button" onclick="agregarPersona()">
+                Agregar Datos
+            </button>
+            <button type="button" onclick="calcularSalario()">
+                Analisis
+            </button>
+        </form>
+        <P id="mediaSalarial"></P>
+        
+    </section>
     <script src="./salarios.js"></script>
     <script src="./analisis.js"></script>
 </body>

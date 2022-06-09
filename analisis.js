@@ -1,4 +1,4 @@
-//helpers
+//function helpers
 
 function esPar(numerito) {
     return (numerito % 2 === 0);
@@ -14,23 +14,23 @@ function calcularMediaAritmetica(lista) {
         return promedioLista;
 }
     
-
-// mediana General    
-    const salariosCol = colombia.map(
-        function (personita) {
-            return personita.salary;
+// mediana General
+    function medianaGeneral(lista) {
+        const salariosCol = lista.map(
+            function (personita) {
+                return personita.salary;
+            }
+        )
+        const salariosColSorted = salariosCol.sort(
+        function (salaryA, SalaryB)
+        {
+            return salaryA - SalaryB;
         }
-    )
-    const salariosColSorted = salariosCol.sort(
-    function (salaryA, SalaryB)
-    {
-        return salaryA - SalaryB;
-    }
-);
-
-
-
-function medianaSalarios(lista) {
+    );
+    return salariosColSorted;
+    }       
+    
+    function medianaSalarios(lista) {
     const mitad = parseInt(lista.length / 2);
     if (esPar(lista.length)) {
         const personitaMitad1 = lista[mitad] - 1;
@@ -43,23 +43,33 @@ function medianaSalarios(lista) {
         return personitaMitad;
     }
     
-}
-const medianaGeneralCol = medianaSalarios(salariosColSorted)
+};
 
 // mediana del top 10%
-
-const spliceStart = (salariosColSorted.length * 90)/100;
-const spliceCount = salariosColSorted.length - spliceStart;
-const salariosColTop10 = salariosColSorted.splice(
+function salariosTop10(lista) {
+const spliceStart = (lista.length * 90)/100;
+const spliceCount = lista.length - spliceStart;
+const salariosColTop10 = lista.splice(
     spliceStart,
     spliceCount,
 );
-const medianaTop10Col = medianaSalarios(salariosColTop10);
 
+return salariosColTop10;
+} 
 
-console.log({
-    medianaGeneralCol,
-    medianaTop10Col
-}
+function calcularSalario() {
+    const salariosSorted = medianaGeneral(colombia);
+    const medianaGeneralCol = medianaSalarios(salariosSorted);
+    const medianaTop10Col = salariosTop10(salariosSorted);
+    document.getElementById("mediaSalarial").innerText = `La media salarial es: ${medianaGeneralCol}`;
+    //document.getElementById("top10Salarial").innerText = medianaTop10Col;
+    const container = document.getElementById("analisis-container");
+    const fragment = document.createDocumentFragment();
+    medianaTop10Col.forEach(item => {
     
-);
+        const texto = document.createElement('p');
+        texto.textContent = `Top 10% de salarios es : ${item}`;
+        fragment.appendChild(texto);
+    });
+    container.appendChild(fragment);
+}

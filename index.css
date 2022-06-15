@@ -1,27 +1,127 @@
 * {
     margin:0 ;
-    background-color: lightblue;
     box-sizing: border-box;
+    padding: 0;
+}
+html {    
+    font-size: 62.5%;
 }
 header {
     height: 100px;
-    width: 90vw;
+    width: 100vw;
     text-align: center;
+    background-color: lightblue;
+    margin: 0 auto;
 }
 header h1 {
-    margin-top: 30px;
+    padding-top: 30px;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    padding: 5px 15px;
+    background-color: black;
+
+}
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.4rem;
+    font-family: verdana,sans-serif;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.navbar li a:hover {
+    color: lightgreen;
+    font-size: 1.8rem;
+}
+.navbar li::first-letter {
+    color: yellow;
+    text-decoration: underline;
+}
+body {
+    background-color: lightblue
 }
 section {
-    height: 300px;
-    width: 300px;
-    margin: 15px auto;
-    padding: 30px;
+    display: block;
+    height: auto;
+    justify-content: center;
+    max-width: 900px;
+    margin: 5px auto;
     font-size: 28px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 3px 5px blue;
-    background-color: aquamarine;
+    background-color: aquamarine;    
+}
+section ul {
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    
+    
+    
 }
 section a{
+    min-width: 300px;
+    height: 300px;
     text-decoration: none;
+    display: flex;
+    border: 1px solid blue;
+    border-radius: 8px;
+    padding-top: 30px;
+    color: brown;
+}
+section .figuras {
+    background-image: url('./asset/cifras.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 250px;
+    height: 100px;
+    margin: 15px auto;
+}
+section .descuento {
+    background-image: url('./asset/porcentaje.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 250px;
+    height: 100px;
+    margin: 15px auto;
+}
+section .promedio {
+    background-image: url('./asset/Math.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 250px;
+    height: 100px;
+    margin: 15px auto;
+}
+section .salarios {
+    background-image: url('./asset/salario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 250px;
+    height: 100px;
+    margin: 15px auto;
+}
+section .reto {
+    background-image: url('./asset/prestamo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    min-width: 250px;
+    height: 100px;
+    margin: 15px auto;
 }

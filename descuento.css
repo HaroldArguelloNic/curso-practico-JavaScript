@@ -56,6 +56,37 @@ header img {
     font-weight: 500;
     line-height: 1.8rem;
 }
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    place-items: center;
+    width: 100vw;
+    min-height: 70px;
+    padding: 5px 15px;
+    background-color: black;
+
+}
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.8rem;
+    font-family: verdana,sans-serif;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.navbar li a:hover {
+    color: lightgreen;
+    font-size: 2rem;
+}
+.navbar li::first-letter {
+    color: yellow;
+    text-decoration: underline;
+}
 .discount-container {
     width: 100%;
     max-width: 600px;

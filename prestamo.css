@@ -20,25 +20,66 @@ header h1 {
     line-height: 2.4rem;
     color: #ffffff;
 }
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    place-items: center;
+    width: 100vw;
+    min-height: 70px;
+    padding: 5px 15px;
+    background-color: black;
+
+}
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.8rem;
+    font-family: verdana,sans-serif;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.navbar li a:hover {
+    color: lightgreen;
+    font-size: 2rem;
+}
+.navbar li::first-letter {
+    color: yellow;
+    text-decoration: underline;
+}
 section {
     position: relative;
-    margin: 25px auto;
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 20px;
     min-width: 300px;
+    background-color: aquamarine;
 }
 section h2 {
     margin: 15px auto;
     text-align: center;
     font-size: 2.2rem;
+    min-width: 300px;
+    max-width: 900px;
 }
 section form {
-    width: 100vw;
+    width: 80vw;
     height: auto;
     display: grid;
+    justify-content: center;
     grid-template-columns: 180px 100px;
     grid-auto-rows:minmax(30px, 40px);
+    border: 1px solid blueviolet;
+    margin: 0 auto;
 }
 section label {
     align-self: center;
+    font-size: 1.8rem;
 }
 section input {
     height: 20px;

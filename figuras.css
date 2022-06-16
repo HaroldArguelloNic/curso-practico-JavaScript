@@ -1,19 +1,25 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    padding: 0;
+
+}
+html {
+    font-size: 62.5%;
+    font-family: Verdana, sans-serif;
 }
 body {
+    height: 100px;
+    width: 100vw;
     text-align: center;
-    height: 100vh;
-    width: 90vw;
-    margin: 0 auto;
+    background-color: lightblue;
+    margin: 0;
 }
 header {
-    margin-top: 15px;
     display: inline-block;
     height: 200px;
-    width: 80vw;
-    padding: 10px ;
+    width: 100%;
+    padding: 10px;
     border: 2px solid rgb(0,0,0,0.16);
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgb(100,100,215, 0.16);
@@ -21,20 +27,51 @@ header {
     color: white;
 }
 header h1 {
-    margin: 20px auto;
+    margin: 35px auto;
+    font-size: 2rem;
 }
 header p {
-    font-size: 22px;
+    font-size: 1.8rem;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    place-items: center;
+    width: 100vw;
+    min-height: 70px;
+    padding: 5px 15px;
+    background-color: black;
+
+}
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding: 5px;
+    font-size: 1.8rem;
+    font-family: verdana,sans-serif;
+}
+.navbar li a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.navbar li a:hover {
+    color: lightgreen;
+    font-size: 2rem;
+}
+.navbar li::first-letter {
+    color: yellow;
+    text-decoration: underline;
 }
 .calcSquare {
-    
     background-color: #00264b;
-    width: 80vw;
+    width: 80%;
     height: 250px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 8px;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 1.8rem;
     color: white;
    
 }
@@ -42,9 +79,8 @@ header p {
     padding: 5px;
 }
 .calcSquare form {
-
     width: 70%;
-    margin: 0 auto;
+    margin: auto;
 }
 .calcSquare label {
     padding: 0 10px;
@@ -71,7 +107,7 @@ header p {
     margin: 0 auto;
     border-radius: 8px;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 1.8rem;
     color: white;
    
 }
@@ -84,7 +120,7 @@ header p {
     margin: 0 auto;
     border-radius: 8px;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 1.8rem;
     color: white;
 }
 .reset {
@@ -96,26 +132,22 @@ header p {
     margin: 0 auto;
     border-radius: 8px;
     padding-top: 30px;
-    font-size: 20px;
+    font-size: 1.4rem;
     color: white;
 
 }
 .reset button {
     background-color: #912b00;
-    font-size: 24px;
+    font-size: 1.4rem;
     border-radius: 8px;
     box-shadow: 3px 3px 3px black;
     color: white;
+    padding: 5px;
 }
 
 
 @media (max-width: 600px) {
-    body {
-        width: 95vw;
-    }
-    header {
-        height: 250px;
-    }
+ 
     .calcSquare {
     height: 320px;   
     }
@@ -151,9 +183,6 @@ margin: 0 auto;
 }
 }
 @media (max-width: 380px) {
-    header {
-        height: 300px;
-    }
     .calcSquare {
     height: 420px;   
     }
